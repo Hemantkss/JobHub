@@ -33,7 +33,7 @@ const Login = () => {
     // logging
     try {
       dispatch(setLoading(true));
-      const res = await axios.post(`${USER_API_END_POINT}/login`, formVal, {
+      const res = await axios.post("https://jobhub-fir1.onrender.com/api/v1/user/login", formVal, {
         // Use formVal instead of formData
         headers: {
           "Content-Type": "application/json",

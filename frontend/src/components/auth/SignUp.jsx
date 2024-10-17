@@ -1,4 +1,4 @@
-import { Label } from "../ui/label";
+import { Label } from "../ui/Label";
 import Navbar from "../shared/Navbar";
 import { Input } from "../ui/input";
 import { RadioGroup } from "../ui/radio-group";
@@ -48,7 +48,7 @@ const SingUp = () => {
     // make a post request to the server to register the user
     try {
       dispatch(setLoading(true)); // Show loading spinner
-      const res = await axios.post(`${USER_API_END_POINT}/register`, formData, {
+      const res = await axios.post("https://jobhub-fir1.onrender.com/api/v1/user/register", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

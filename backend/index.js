@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://jobhub-fir1.onrender.com",
   credentials: true,
   // methods: "GET, POST, PUT, DELETE"
 };
